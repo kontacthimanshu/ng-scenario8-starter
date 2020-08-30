@@ -1,0 +1,26 @@
+<div>
+    <img [src]="prop?.imageUrl" [alt]="prop?.name">
+    <div class="row">
+        <div class="col-md-11">
+            <h2>{{prop?.name}} </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div><strong>Built Up Area:</strong> {{prop?.builtUpArea}}</div>
+            <div><strong>Carpet Area:</strong> {{prop?.carpetArea}}</div>
+            <div><strong>Configuration:</strong> ${{prop?.configuration}}</div>
+			<div><strong>Facing:</strong> {{prop?.facing}}</div>
+            <div><strong>Age:</strong> {{prop?.age}}</div>
+            <div><strong>Type:</strong> ${{prop?.type}}</div>
+        </div>
+        <div class="col-md-6">
+            <address>
+                <strong>Address:</strong><br />
+                {{prop?.location?.address}}<br />
+                {{prop?.location?.city}}, {{prop?.location?.country}}
+            </address>
+        </div>
+    </div>
+</div>

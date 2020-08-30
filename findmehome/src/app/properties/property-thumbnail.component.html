@@ -1,0 +1,14 @@
+<div class="prop-details prop-details-hover thumbnail" [routerLink]="['/properties',inpProp.id]">
+    <h2>{{inpProp?.name | uppercase}}</h2>
+	<h6>{{inpProp?.type | uppercase}}</h6>
+    <div>Price: {{inpProp?.price | currency}}</div>
+	<div>Built Up Area: {{inpProp?.builtUpArea}}</div>
+	<div>Carpet Area: {{inpProp?.carpetArea}}</div>
+	<div>Configuration: {{inpProp?.configuration}}</div>
+	<div [hidden]="!inpProp?.facing" [ngStyle]="{'color':inpProp?.facing === 'East' ? 'green':'#bbb', 'font-weight':inpProp?.facing === 'East' ? 'bold':'normal'}">Facing: {{inpProp?.facing}}</div>
+	<div>Age: {{inpProp?.age}}</div>
+    <div>
+        <span>Location: {{inpProp?.location.address}}</span>
+        <span>{{inpProp?.location.city}},{{inpProp?.location.country}}</span>
+    </div>
+</div>
