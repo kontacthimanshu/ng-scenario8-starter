@@ -8,7 +8,7 @@
 	<div [hidden]="!inpProp?.facing" [ngStyle]="{'color':inpProp?.facing === 'East' ? 'green':'#bbb', 'font-weight':inpProp?.facing === 'East' ? 'bold':'normal'}">Facing: {{inpProp?.facing}}</div>
 	<div>Age: {{inpProp?.age}}</div>
     <div>
-        <span>Location: {{inpProp?.location.address}}</span>
+        <span class="pad-left">Location: {{inpProp?.location.address}}</span>
         <span>{{inpProp?.location.city}},{{inpProp?.location.country}}</span>
     </div>
 </div>

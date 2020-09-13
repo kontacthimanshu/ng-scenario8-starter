@@ -7,11 +7,11 @@ import { NotFoundComponent } from './errors/notfound.component';
 import { PropertyDetailsRouteActivatorService } from './properties/property-details-route-activator.service';
 
 const routes: Routes = [
-  {path:'properties', component: PropertyListComponent},
-  {path:'properties/new', component: CreatePropertyComponent, canDeactivate: ['canDeactivateCreateProperty']},
-  {path:'properties/:id', component: PropertyDetailsComponent, canActivate: [PropertyDetailsRouteActivatorService]},
+  { path:'properties', component: PropertyListComponent },
+  { path:'properties/new', component: CreatePropertyComponent, canDeactivate: ['canDeactivateCreateProperty'] },
+  { path:'properties/:id', component: PropertyDetailsComponent, canActivate:[PropertyDetailsRouteActivatorService] },
   { path:'notfound', component: NotFoundComponent },
-  {path:'', redirectTo:'/properties', pathMatch:'full'}
+  { path:'', redirectTo:'/properties', pathMatch:'full'}
 ];
 
 @NgModule({

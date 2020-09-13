@@ -30,7 +30,7 @@ import { IsFormTouched } from './properties/canDeactivateCreateProperty.function
     PropertiesService,
     ToastrService,
     PropertyDetailsRouteActivatorService,
-    { provide:'canDeactivateCreateProperty', useValue: IsFormTouched }
+    {provide:'canDeactivateCreateProperty', useValue: IsFormTouched}
   ],
   bootstrap: [AppComponent]
 })
