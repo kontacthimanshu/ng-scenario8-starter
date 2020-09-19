@@ -2,17 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  template:`
-  <h1>New Property</h1>
-  <hr>
-  <div class="col-md-6">
-    <h3>[Create Property Form | Dummy ]</h3>
-    <br/>
-    <br/>
-    <button type="submit" class="btn btn-primary">Save</button>
-    <button type="button" class="btn btn-primary" (click)="cancel()">Cancel</button>
-  </div>
-  `
+  templateUrl:'./new-property.component.html'
 })
 export class CreatePropertyComponent
 {
